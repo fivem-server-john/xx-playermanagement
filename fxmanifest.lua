@@ -12,6 +12,7 @@ server_scripts {
 	'server/database.lua',
 	'server/player.lua',
 	'server/main.lua',
+	'server/export.lua'
 }
 
 client_scripts {
