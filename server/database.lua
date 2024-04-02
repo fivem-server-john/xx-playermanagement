@@ -20,5 +20,13 @@ function Database()
         )
     end
 
+    self.GetPlayerData = function(citizenId)
+        local result = exports.oxmysql:executeSync('SELECT * FROM player_characters WHERE citizen_id = ?', {citizenId})
+        if result[1] == nil then
+            return nil
+        end
+        return result[1]
+    end
+
     return self
 end
