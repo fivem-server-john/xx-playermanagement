@@ -15,7 +15,7 @@ function Database()
                     PRIMARY KEY (`id`),
                     KEY `citizenid` (`citizen_id`)
                     
-                );
+                )
             ]]
         )
     end

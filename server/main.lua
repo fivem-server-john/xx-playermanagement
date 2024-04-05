@@ -34,5 +34,5 @@ function ValidatePlayer(source, playerData)
     local newPlayer = Player(playerData)
     Players[src] = newPlayer
 
-    print("Logged in player: " .. playerData.citizenid)
+    print("Logged in player: " .. playerData.citizen_id)
 end
