@@ -6,6 +6,10 @@ function PLAYERMANAGEMENT_SERVER()
         return LoginPlayer(source, citizenId)
     end
 
+    self.GetPlayerByServerId = function(source)
+        return GetPlayerByServerId(source)
+    end
+
     return self
 end
 

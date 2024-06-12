@@ -36,3 +36,11 @@ function ValidatePlayer(source, playerData)
 
     print("Logged in player: " .. playerData.citizen_id)
 end
+
+function GetPlayerByServerId(source)
+    local src = source
+
+    if not Players[src] then return false end
+
+    return Players[src]
+end
